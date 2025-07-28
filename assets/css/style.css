@@ -46,3 +46,51 @@ input[type="checkbox"] {
     margin-right: 8px;
     accent-color: #4dc0e2;
 }
+
+#div-cpf {
+    margin-top: 50px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    
+}
+
+#div-cpf label {
+    font-size: 1.125rem !important;
+    font-weight: 600 !important;
+    color: black !important;
+}
+
+
+.woocommerce-checkout .input-text {
+    padding: 12px !important;
+}
+
+/* Corrige sobreposição do label e placeholder nos campos do Asaas */
+#wfacp_checkout_form .asaas-cc-form-field label {
+  position: static !important;
+  transform: none !important;
+  font-size: 14px !important;
+  margin-top: 10px !important;
+  margin-bottom: 5px !important;
+  display: block !important;
+}
+
+#wfacp_checkout_form  p {
+  color: black;
+}
+
+#wfacp_checkout_form .asaas-cc-form-field input {
+  margin-top: 0 !important;
+  padding: 10px !important;
+  height: auto !important;
+}
+
+/* Deixa o placeholder mais discreto, caso prefira */
+#wfacp_checkout_form .asaas-cc-form-field input::placeholder {
+  color: #999 !important;
+  opacity: 1 !important;
+  font-size: 13px !important;
+}
+

@@ -4,6 +4,7 @@ class OrderBump {
     public function __construct() {
         add_action('woocommerce_review_order_before_submit', [$this, 'adicionarOrderBumpCheckout'], 15);
         add_action('woocommerce_checkout_update_order_review', [$this, 'adicionarProdutoBumpAoCarrinho']);
+        add_action('wfacp_enqueue_scripts', [$this, 'registrarEstilos'], 999);
         add_action('wp_enqueue_scripts', [$this, 'registrarEstilos']);
     }
 
@@ -13,7 +14,7 @@ class OrderBump {
 
     private function getProductsBumpRelations() {
         return [
-            61 => 66,
+            13 => 24,
             40 => 13,
         ];
     }
