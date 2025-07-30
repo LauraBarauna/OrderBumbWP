@@ -15,5 +15,4 @@ require_once plugin_dir_path(__FILE__) . 'includes/CheckoutFields.php';
 
 add_action('plugins_loaded', function() {
     new OrderBump();
-    new CheckoutFields();
 });
